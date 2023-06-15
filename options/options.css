@@ -1,0 +1,33 @@
+body {
+  width: 500px;
+  margin: 1rem auto;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 1rem;
+
+}
+
+.inputs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputs__container>div {
+  font-size: 1rem;
+}
+
+.inputs__container>input {
+  font-size: 1.3rem;
+}
+
+button {
+  width: fit-content;
+  cursor: pointer;
+}
