@@ -65,7 +65,9 @@ buttonGoToOptions.addEventListener("click", function () {
 
 buttonSaveOne.addEventListener("click", async () => {
   const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
-  const { tituloUna } = await chrome.storage.local.get("tituloUna");
+  let { tituloUna } = await chrome.storage.local.get("tituloUna");
+
+  if (!tituloUna) tituloUna = "Enlace guardado desde Chrome";
 
   const note = {
     id: getFormattedDateTime(),
@@ -107,7 +109,9 @@ buttonSaveAll.addEventListener("click", async () => {
     })
     .join("<BR>");
 
-  const { tituloSesion } = await chrome.storage.local.get("tituloSesion");
+  let { tituloSesion } = await chrome.storage.local.get("tituloSesion");
+
+  if (!tituloSesion) tituloSesion = "Sesión guardada desde Chrome";
 
   const note = {
     id: getFormattedDateTime(),
