@@ -5,8 +5,8 @@
 Yes, another one. Made to learn and practice React.
 
 The application has a front-end made in React, a back-end in Node.js/Express with a MySQL database, and an extension for Google Chrome.
-- fron-end: https://github.com/fedeholc/anotes-front-react
-- back-end: https://github.com/fedeholc/anotes-back-express 
+- front-end: https://github.com/fedeholc/anota-front-react
+- back-end: https://github.com/fedeholc/anota-back-express 
 - extension: https://github.com/fedeholc/anota-chrome-extension
 
 
